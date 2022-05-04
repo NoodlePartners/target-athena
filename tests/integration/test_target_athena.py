@@ -1,12 +1,12 @@
 import os
-import botocore
 import unittest
 
+import botocore
+from dotenv import load_dotenv
 from nose.tools import assert_raises
 
-from target_athena.target import TargetAthena
 from target_athena import s3
-from dotenv import load_dotenv
+from target_athena.target import TargetAthena
 
 try:
     import tests.utils as test_utils

@@ -1,13 +1,11 @@
-from datetime import datetime
-import time
-import singer
+import collections
 import json
 import re
-import collections
-import inflection
-
-from decimal import Decimal
 from datetime import datetime
+from decimal import Decimal
+
+import inflection
+import singer
 
 logger = singer.get_logger("target_athena")
 

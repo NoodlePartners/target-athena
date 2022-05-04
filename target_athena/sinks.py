@@ -1,19 +1,15 @@
 """Sample Parquet target stream class, which handles writing streams."""
 
-from datetime import datetime
-import csv
 import gzip
 import os
 import shutil
-from typing import List
 import tempfile
+from datetime import datetime
 
 from singer_sdk.sinks import BatchSink
 
-from target_athena import athena
-from target_athena import s3
-from target_athena import utils
-from target_athena import formats
+from target_athena import athena, formats, s3, utils
+
 
 class AthenaSink(BatchSink):
     """Athena target sink class."""

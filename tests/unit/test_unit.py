@@ -1,7 +1,9 @@
 import unittest
+
 from nose.tools import assert_raises
 
 import target_athena
+
 
 class TestUnit(unittest.TestCase):
     """

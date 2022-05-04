@@ -1,6 +1,6 @@
 import os
-import singer
 from logging import Logger
+
 from pyathena import connect
 
 

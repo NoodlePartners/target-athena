@@ -1,8 +1,9 @@
-"""Methods for writinig different object formats."""
+"""Methods for writing different object formats."""
 
-import os
 import csv
 import json
+import os
+
 
 def write_csv(filename, record, header=None, delimiter= ",", quotechar='"'):
 
