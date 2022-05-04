@@ -53,7 +53,7 @@ def flatten_record(d, parent_key=[], sep="__"):
     return dict(items)
 
 
-def get_target_key(stream_name, object_format, key_stem, prefix="", naming_convention=None):
+def get_target_key(stream_name, object_format, key_stem, prefix=""):
     """Creates and returns an S3 key for the message"""
 
     return f"{prefix}{stream_name}/{key_stem}.{object_format}"

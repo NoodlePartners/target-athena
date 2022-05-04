@@ -1,5 +1,3 @@
-"""Sample Parquet target stream class, which handles writing streams."""
-
 import gzip
 import os
 import shutil
@@ -85,7 +83,6 @@ class AthenaSink(BatchSink):
                 object_format,
                 prefix=s3_prefix,
                 key_stem=key_stem,
-                # naming_convention=self.config.get("naming_convention"),
             )
             if not (filename, target_key) in filenames:
                 filenames.append((filename, target_key))
