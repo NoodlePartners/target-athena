@@ -77,6 +77,7 @@ Full list of options in `config.json`:
 | aws_profile                         | String  | No         | AWS profile name for profile based authentication. If not provided, `AWS_PROFILE` environment variable will be used. |
 | s3_bucket                           | String  | Yes        | S3 Bucket name                                                |
 | s3_key_prefix                       | String  |            | A static prefix before the generated S3 key names. Using prefixes you can upload files into specific directories in the S3 bucket. Default(None)
+| s3_key_stem | String | No | (Default: current timestamp) Custom name for the stem of the s3_key. Follows the prefix & stream name, precedes the file format. 
 | s3_staging_dir                       | String  | Yes         | S3 location to stage files. Example: s3://YOUR_S3_BUCKET/path/to/
 | delimiter                           | String  |            | (Default: ',') A one-character string used to separate fields. |
 | quotechar                           | String  |            | (Default: '"') A one-character string used to quote fields containing special characters, such as the delimiter or quotechar, or which contain new-line characters. |
